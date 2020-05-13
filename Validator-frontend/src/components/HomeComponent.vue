@@ -83,8 +83,8 @@
             return {
                 applicationProfiles: [
                     'Adresregister', 'Besluit_Publicatie', 'Dienstencataloog', 'Generiek_basis', 'Generieke_Terugmeldfaciliteit',
-                    'Notificatie_basis', 'Organisatie_basis', 'Persoon_basis', 'Subsidieregister',
-                    'Contactvoorkeuren', 'Dienst_Transactiemodel', 'Vlaamse_codex'
+                    'Notificatie_basis', 'Organisatie_basis', 'Persoon_basis', 
+                    'Contactvoorkeuren', 'Dienst_Transactiemodel', 'Vlaamse_codex', 'Mobililiteit_trips_en_aanbod'
                 ],
                 shaclFile: null,
                 shaclFileError: false,
@@ -211,7 +211,7 @@
                     store.commit('setRequestBody', requestBody);
 ;
                     // Send content to validator
-                    fetch('http://localhost:8080/shacl/applicatieprofielen/api/validate', {
+	           fetch(process.env.VUE_APP_HOSTNAME_URL +  process.env.VUE_APP_BACKEND_PATH + '/shacl/applicatieprofielen/api/validate', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
