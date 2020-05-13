@@ -84,7 +84,7 @@
                 applicationProfiles: [
                     'Adresregister', 'Besluit_Publicatie', 'Dienstencataloog', 'Generiek_basis', 'Generieke_Terugmeldfaciliteit',
                     'Notificatie_basis', 'Organisatie_basis', 'Persoon_basis', 
-                    'Contactvoorkeuren', 'Dienst_Transactiemodel', 'Vlaamse_codex', 'Mobililiteit_trips_en_aanbod'
+                    'Contactvoorkeuren', 'Dienst_Transactiemodel', 'Vlaamse_codex', 'Mobiliteit_trips_en_aanbod'
                 ],
                 shaclFile: null,
                 shaclFileError: false,
